@@ -16,17 +16,27 @@ export default function Hero() {
           </h1>
 
           <h2 className="mt-3 text-2xl text-blue-400 font-medium tracking-wide">
-            Senior Full-Stack Developer
+            Full-Stack Developer
           </h2>
 
           <p className="mt-8 text-gray-400 leading-relaxed max-w-xl">
-            I’m a Full-Stack Developer with **5 years of experience** in both backend and frontend development. 
-            I specialize in building **reliable, scalable systems** with **FastAPI**, **Spring Boot**, and **React**. 
-            My focus is on solving technical problems and creating efficient solutions that work well in real-world applications.
+            I am a Full-Stack Developer with 5 years of experience, having started my
+            career in 2021 while studying at university. I work with technologies such
+            as FastAPI, Spring Boot, React, and PostgreSQL, focusing on building
+            reliable and scalable systems.
+          </p>
+
+          <p className="mt-4 text-gray-400 leading-relaxed max-w-xl">
+            My goal is to solve real-world problems through practical engineering
+            solutions while continuously improving my technical skills.
           </p>
 
           <p className="mt-4 text-gray-500 text-sm tracking-wide">
-            Available for **Remote Opportunities**.
+            📍 St. Petersburg, Russia
+          </p>
+
+          <p className="mt-1 text-gray-500 text-sm tracking-wide">
+            Available for Remote Opportunities
           </p>
 
           <div className="mt-12 flex gap-6">
@@ -56,7 +66,7 @@ export default function Hero() {
           <div className="relative">
             <div className="absolute inset-0 rounded-xl bg-gradient-to-tr from-blue-500/20 to-transparent blur-2xl" />
             <img
-              src="/profile.jpg"  // Make sure to add your profile image here
+              src="/profile.jpg"
               alt="Ellen Martinelli"
               className="relative w-[340px] h-[340px] object-cover rounded-xl border border-gray-800 shadow-xl"
             />
