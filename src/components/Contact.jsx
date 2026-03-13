@@ -17,7 +17,7 @@ export default function Contact() {
           className="mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-light text-white tracking-tight">
-            Contact
+            Контакты
           </h2>
 
           <div className="mt-6 h-[1px] w-24 bg-blue-500" />
@@ -34,15 +34,15 @@ export default function Contact() {
             viewport={{ once: true }}
           >
             <h3 className="text-xl text-white font-medium mb-6 tracking-wide">
-              Availability
+              Доступность
             </h3>
 
             <p className="text-gray-400 leading-relaxed max-w-xl">
-              I am currently looking for **remote** backend engineering roles where I can leverage my skills in **building scalable, performant, and resilient systems**. With my expertise in **distributed architectures** and **performance optimization**, I am eager to contribute to teams working on high-impact projects.
+              Я ищу возможности для работы в роли <strong>удалённого Full-Stack разработчика</strong>, где могу использовать свои навыки в создании <strong>адаптивных интерфейсов</strong>, <strong>backend API</strong>, оптимизации производительности сайтов и интеграции frontend с backend.
             </p>
 
             <p className="mt-6 text-gray-500 text-sm leading-relaxed">
-              If you're seeking someone to work on **high-load systems**, **performance optimization**, or **complex production issues**, I’d be excited to discuss how I can help make a difference in your team.
+              Готова работать над проектами с <strong>WordPress</strong>, <strong>1C-Bitrix</strong>, <strong>PHP/MySQL</strong>, а также использовать нейросети (<strong>ChatGPT</strong>, <strong>GitHub Copilot</strong>) для ускорения разработки и генерации кода, макетов и контента.
             </p>
           </motion.div>
 
@@ -54,7 +54,7 @@ export default function Contact() {
             viewport={{ once: true }}
           >
             <h3 className="text-xl text-white font-medium mb-6 tracking-wide">
-              Direct Communication
+              Прямой контакт
             </h3>
 
             <div className="space-y-5 text-gray-400">
@@ -70,13 +70,13 @@ export default function Contact() {
               </div>
 
               <div>
-                <p className="text-gray-500 text-sm">Location</p>
-                <p>St. Petersburg, Russia</p>
+                <p className="text-gray-500 text-sm">Локация</p>
+                <p>Санкт-Петербург, Россия</p>
               </div>
 
               <div>
-                <p className="text-gray-500 text-sm">Work Format</p>
-                <p>Remote / Hybrid</p>
+                <p className="text-gray-500 text-sm">Формат работы</p>
+                <p>Удалённо / Гибридно</p>
               </div>
 
             </div>

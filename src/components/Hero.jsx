@@ -11,32 +11,28 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
         >
-          <h1 className="text-5xl md:text-6xl font-light text-white leading-tight tracking-tight">
-            Ellen Martinelli
+          <h1 className="text-4xl md:text-5xl font-light text-white leading-tight tracking-tight">
+            Эллен Мартинелли
           </h1>
 
           <h2 className="mt-3 text-2xl text-blue-400 font-medium tracking-wide">
-            Full-Stack Developer
+            Full-Stack веб-разработчик
           </h2>
 
           <p className="mt-8 text-gray-400 leading-relaxed max-w-xl">
-            I am a Full-Stack Developer with 5 years of experience, having started my
-            career in 2021 while studying at university. I work with technologies such
-            as FastAPI, Spring Boot, React, and PostgreSQL, focusing on building
-            reliable and scalable systems.
+            Full-Stack веб-разработчик с 3+ годами опыта, специализируюсь на создании адаптивных интерфейсов и разработке backend API. Работаю с <strong>React</strong>, <strong>Vue</strong>, <strong>Node.js</strong> и <strong>FastAPI</strong>, а также с <strong>PHP</strong> и <strong>MySQL</strong>.
           </p>
 
           <p className="mt-4 text-gray-400 leading-relaxed max-w-xl">
-            My goal is to solve real-world problems through practical engineering
-            solutions while continuously improving my technical skills.
+            Знакома с <strong>WordPress</strong> и <strong>1C-Bitrix</strong> на уровне создания и доработки сайтов, интеграции плагинов и форм. Активно использую нейросети (<strong>ChatGPT</strong>, <strong>GitHub Copilot</strong>) для ускорения рутинных задач и генерации кода, контента и дизайна.
           </p>
 
           <p className="mt-4 text-gray-500 text-sm tracking-wide">
-            📍 St. Petersburg, Russia
+            📍 Санкт-Петербург, Россия
           </p>
 
           <p className="mt-1 text-gray-500 text-sm tracking-wide">
-            Available for Remote Opportunities
+            Открыта для удалённых
           </p>
 
           <div className="mt-12 flex gap-6">
@@ -44,14 +40,14 @@ export default function Hero() {
               href="#projects"
               className="px-7 py-3 bg-blue-500 text-black rounded-md font-medium hover:bg-blue-400 transition duration-300"
             >
-              View Projects
+              Мои проекты
             </a>
 
             <a
               href="#contact"
               className="px-7 py-3 border border-gray-700 text-gray-300 rounded-md hover:border-blue-400 hover:text-blue-400 transition duration-300"
             >
-              Contact
+              Связаться
             </a>
           </div>
         </motion.div>
@@ -67,7 +63,7 @@ export default function Hero() {
             <div className="absolute inset-0 rounded-xl bg-gradient-to-tr from-blue-500/20 to-transparent blur-2xl" />
             <img
               src="/profile.jpg"
-              alt="Ellen Martinelli"
+              alt="Арина Мартинелли"
               className="relative w-[340px] h-[340px] object-cover rounded-xl border border-gray-800 shadow-xl"
             />
           </div>

@@ -16,19 +16,19 @@ export default function About() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-light tracking-tight mb-10">
-            About Me
+            О себе
           </h2>
 
           <p className="text-gray-300 leading-relaxed">
-            I’m a Full-Stack Developer with **5 years of experience** in both backend and frontend development. I specialize in building **reliable, scalable systems** using **FastAPI**, **Spring Boot**, and **React**. I’m focused on solving technical challenges and creating efficient, real-world solutions.
+            Full-Stack веб-разработчик с 3+ годами опыта, специализируюсь на создании адаптивных интерфейсов и разработке backend API. Имею опыт работы с <strong>React</strong>, <strong>Vue</strong>, <strong>Node.js</strong> и <strong>FastAPI</strong>, а также с <strong>PHP</strong> и <strong>MySQL</strong>.
           </p>
 
           <p className="mt-6 text-gray-400 leading-relaxed">
-            I value straightforward work, responsibility, and collaboration. Always looking for ways to improve my skills and deliver clean, performant code.
+            Знакома с <strong>WordPress</strong> и <strong>1C-Bitrix</strong> на уровне создания и доработки сайтов, интеграции плагинов и форм. Активно использую нейросети (<strong>ChatGPT</strong>, <strong>GitHub Copilot</strong>) для ускорения рутинных задач и генерации кода, контента и дизайна.
           </p>
 
           <p className="mt-6 text-gray-500 leading-relaxed">
-            Recently relocated to **St. Petersburg**, I’m actively looking for **remote or hybrid backend roles**, where I can contribute to dynamic, impactful projects.
+            Люблю оптимизировать производительность сайтов и создавать удобные интерфейсы, которые корректно работают на всех устройствах.
           </p>
         </motion.div>
 
@@ -42,28 +42,28 @@ export default function About() {
         >
           <div className="border-l border-gray-800 pl-8">
             <h3 className="text-blue-400 text-sm tracking-widest uppercase mb-3">
-              Backend Focus
+              Frontend & UI
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              **High-load REST API development**, building **asynchronous Python systems**, and creating **microservice-based architectures**. Designing scalable systems that ensure high availability.
+              Создание адаптивных интерфейсов, оптимизация UX/UI и поддержка корректной работы на всех устройствах. Работа с <strong>React</strong> и <strong>Vue</strong>.
             </p>
           </div>
 
           <div className="border-l border-gray-800 pl-8">
             <h3 className="text-blue-400 text-sm tracking-widest uppercase mb-3">
-              Data & Performance
+              Backend & API
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              **PostgreSQL optimization** through **execution plan analysis**, **indexing**, and **raw SQL optimization**. Using **Redis** for caching to handle load and improve performance.
+              Разработка backend API с использованием <strong>Node.js</strong> и <strong>FastAPI</strong>. Оптимизация производительности, работа с <strong>MySQL</strong> и интеграция с внешними сервисами.
             </p>
           </div>
 
           <div className="border-l border-gray-800 pl-8">
             <h3 className="text-blue-400 text-sm tracking-widest uppercase mb-3">
-              Production Experience
+              CMS & Tools
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Managing **CI/CD pipelines**, ensuring **Docker deployments** are efficient, and leading **production incident investigations**. Focused on **reliability** and **long-term stability**.
+              Опыт работы с <strong>WordPress</strong> и <strong>1C-Bitrix</strong>, настройка и доработка сайтов, интеграция плагинов и форм. Использование нейросетей для генерации кода, контента и дизайна.
             </p>
           </div>
         </motion.div>

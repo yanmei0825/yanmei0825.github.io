@@ -16,18 +16,18 @@ export default function Footer() {
           {/* LEFT */}
           <div>
             <h3 className="text-white text-2xl font-light tracking-wide">
-              Ellen Martinelli
+              Арина Мартинелли
             </h3>
 
             <p className="mt-3 text-gray-500 text-sm max-w-md leading-relaxed">
-              Backend systems architecting with a focus on precision, scalability, and long-term sustainability. Passionate about performance and system resilience.
+              Full-Stack веб-разработчик с опытом работы более 3 лет. Специализируюсь на адаптивных интерфейсах, backend API, оптимизации производительности и интеграции frontend и backend решений. Активно использую нейросети для ускорения разработки и генерации кода, макетов и контента.
             </p>
           </div>
 
           {/* RIGHT */}
           <div className="space-y-2 text-right">
             <p className="text-gray-500 text-sm">
-              St. Petersburg, Russia
+              Санкт-Петербург, Россия
             </p>
 
             <a
@@ -45,11 +45,11 @@ export default function Footer() {
         {/* Bottom Line */}
         <div className="mt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 text-xs tracking-wide">
           <p>
-            © {new Date().getFullYear()} Ellen Martinelli. All rights reserved.
+            © {new Date().getFullYear()} Арина Мартинелли. Все права защищены.
           </p>
 
           <p className="mt-3 md:mt-0">
-            Crafted with precision and built for long-term architectural intent.
+            Создано с вниманием к деталям и оптимизировано для стабильной работы.
           </p>
         </div>
 

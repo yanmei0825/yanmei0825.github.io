@@ -9,7 +9,7 @@ export default function Navbar() {
 
         {/* LOGO */}
         <div className="text-white text-lg font-light tracking-wider">
-          ELLEN <span className="text-blue-400">M.</span>
+          Эллен <span className="text-blue-400">М.</span>
         </div>
 
         {/* DESKTOP MENU */}
@@ -18,29 +18,29 @@ export default function Navbar() {
             href="#about"
             className="text-gray-400 hover:text-blue-400 transition duration-300"
           >
-            About
+            О себе
           </a>
 
           <a
             href="#projects"
             className="text-gray-400 hover:text-blue-400 transition duration-300"
           >
-            Projects
+            Проекты
           </a>
 
           <a
             href="#contact"
             className="text-gray-400 hover:text-blue-400 transition duration-300"
           >
-            Contact
+            Контакты
           </a>
 
-          {/* SHORT PHRASE (SIMPLE) BELOW PROJECTS */}
+          {/* SHORT PHRASE BELOW PROJECTS */}
           <a
-            href="#engineering" // Update this link to the desired section or URL
+            href="#engineering"
             className="text-gray-400 hover:text-blue-400 transition duration-300 text-sm italic"
           >
-            Resilient Engineering
+            Надёжная разработка
           </a>
         </div>
 
@@ -57,16 +57,16 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-black border-t border-gray-800 px-6 py-6 space-y-4 text-gray-400">
           <a href="#about" className="block hover:text-blue-400 transition">
-            About
+            О себе
           </a>
           <a href="#projects" className="block hover:text-blue-400 transition">
-            Projects
+            Проекты
           </a>
           <a href="#contact" className="block hover:text-blue-400 transition">
-            Contact
+            Контакты
           </a>
           <a href="#engineering" className="block hover:text-blue-400 transition mt-4">
-            Resilient Engineering
+            Надёжная разработка
           </a>
         </div>
       )}
