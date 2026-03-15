@@ -1,75 +1,102 @@
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
+import { useState } from "react";
 
 export default function Hero() {
+
+  const [rotate, setRotate] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    const x = (e.clientY / window.innerHeight - 0.5) * 10;
+    const y = (e.clientX / window.innerWidth - 0.5) * -10;
+    setRotate({ x, y });
+  };
+
   return (
-    <section className="min-h-screen flex items-center justify-center bg-black px-6 pt-32">
-      <div className="max-w-6xl w-full grid md:grid-cols-2 gap-20 items-center">
+    <section
+      onMouseMove={handleMouseMove}
+      className=" min-h-screen bg-black flex items-center justify-center px-6"
+    >
+  
 
-        {/* LEFT */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
-        >
-          <h1 className="text-4xl md:text-5xl font-light text-white leading-tight tracking-tight">
+      {/* HERO CONTENT */}
+      <motion.div
+        style={{
+          transform: `rotateX(${rotate.x}deg) rotateY(${rotate.y}deg)`
+        }}
+        transition={{ type: "spring", stiffness: 50 }}
+        className="max-w-6xl w-full grid md:grid-cols-2 gap-20 items-center z-20"
+      >
+
+        {/* TEXT */}
+        <div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-5xl text-white font-light"
+          >
             Эллен Мартинелли
-          </h1>
+          </motion.h1>
 
-          <h2 className="mt-3 text-2xl text-blue-400 font-medium tracking-wide">
-            Full-Stack веб-разработчик
-          </h2>
-
-          <p className="mt-8 text-gray-400 leading-relaxed max-w-xl">
-            Full-Stack веб-разработчик с 3+ годами опыта, специализируюсь на создании адаптивных интерфейсов и разработке backend API. Работаю с <strong>React</strong>, <strong>Vue</strong>, <strong>Node.js</strong> и <strong>FastAPI</strong>, а также с <strong>PHP</strong> и <strong>MySQL</strong>.
-          </p>
-
-          <p className="mt-4 text-gray-400 leading-relaxed max-w-xl">
-            Знакома с <strong>WordPress</strong> и <strong>1C-Bitrix</strong> на уровне создания и доработки сайтов, интеграции плагинов и форм. Активно использую нейросети (<strong>ChatGPT</strong>, <strong>GitHub Copilot</strong>) для ускорения рутинных задач и генерации кода, контента и дизайна.
-          </p>
-
-          <p className="mt-4 text-gray-500 text-sm tracking-wide">
-            📍 Санкт-Петербург, Россия
-          </p>
-
-          <p className="mt-1 text-gray-500 text-sm tracking-wide">
-            Открыта для удалённых
-          </p>
-
-          <div className="mt-12 flex gap-6">
-            <a
-              href="#projects"
-              className="px-7 py-3 bg-blue-500 text-black rounded-md font-medium hover:bg-blue-400 transition duration-300"
-            >
-              Мои проекты
-            </a>
-
-            <a
-              href="#contact"
-              className="px-7 py-3 border border-gray-700 text-gray-300 rounded-md hover:border-blue-400 hover:text-blue-400 transition duration-300"
-            >
-              Связаться
-            </a>
-          </div>
-        </motion.div>
-
-        {/* RIGHT - IMAGE */}
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="flex justify-center"
-        >
-          <div className="relative">
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-tr from-blue-500/20 to-transparent blur-2xl" />
-            <img
-              src="/profile.jpg"
-              alt="Арина Мартинелли"
-              className="relative w-[340px] h-[340px] object-cover rounded-xl border border-gray-800 shadow-xl"
+          <div className="mt-4 text-3xl text-blue-400">
+            <TypeAnimation
+              sequence={[
+                "Full-Stack Developer",
+                2000,
+                "React / FastAPI Engineer",
+                2000,
+                "Backend API Architect",
+                2000
+              ]}
+              repeat={Infinity}
+              speed={40}
             />
           </div>
-        </motion.div>
 
-      </div>
+          <p className="mt-8 text-gray-400 max-w-xl leading-relaxed">
+            Full-Stack разработчик создающий современные web-приложения
+            используя React, FastAPI, Node.js и Docker.
+          </p>
+
+          <div className="mt-10 flex gap-6">
+
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              href="#projects"
+              className="px-8 py-3 bg-blue-500 text-black rounded-md"
+            >
+              Projects
+            </motion.a>
+
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              href="#contact"
+              className="px-8 py-3 border border-gray-700 text-gray-300 rounded-md"
+            >
+              Contact
+            </motion.a>
+
+          </div>
+
+        </div>
+
+        {/* IMAGE */}
+        <div className="flex justify-center">
+
+          <motion.img
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            whileHover={{ scale: 1.05 }}
+            src="/profile.jpg"
+            alt="Ellen"
+            className="w-[340px] h-[340px] object-cover rounded-xl border border-gray-800 shadow-2xl"
+          />
+
+        </div>
+
+      </motion.div>
+
     </section>
   );
 }

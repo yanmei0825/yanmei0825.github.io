@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="bg-black text-white px-6 py-40 relative"
+      className="bg-black text-white px-6 py-40 "
     >
       <div className="w-full">
          <motion.h2
