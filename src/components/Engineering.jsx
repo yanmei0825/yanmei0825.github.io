@@ -32,15 +32,18 @@ export default function Engineering() {
     <section id="engineering" className="bg-black text-white px-6 py-40">
       <div className="max-w-6xl mx-auto">
         {/* HEADER */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="mb-32"
-        >
-          <h2 className="text-4xl md:text-5xl font-light tracking-tight">Engineering Approach</h2>
-          <div className="mt-6 h-[1px] w-28 bg-blue-500" />
+          <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="mb-20"
+            >
+            <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-500 tracking-tight">
+              Engineering Approach
+            </h2>
+            <div className="mt-6 h-[2px] w-24 bg-gradient-to-r from-blue-400 to-pink-500" />
+           
           <p className="mt-8 text-gray-400 max-w-2xl leading-relaxed">
             Я Full-Stack разработчик с более чем 5 лет опыта в создании масштабируемых и производительных веб-приложений. Мой подход фокусируется на создании чистой архитектуры и эффективной интеграции технологий для решения реальных задач.
           </p>

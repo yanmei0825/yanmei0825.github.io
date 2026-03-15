@@ -28,19 +28,23 @@ export default function Projects() {
       id="projects"
       className="bg-black text-white px-6 py-40 relative overflow-hidden"
     >
+      
       <div className="max-w-6xl mx-auto">
 
         {/* TITLE */}
-        <motion.h2
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-4xl font-light tracking-tight mb-20"
-        >
-          Мои проекты
-        </motion.h2>
-
+       
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="mb-20"
+            >
+              <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-500 tracking-tight">
+              Мои проекты
+              </h2>
+              <div className="mt-6 h-[2px] w-24 bg-gradient-to-r from-blue-400 to-pink-500" />
+            </motion.div>
         {/* GRID */}
         <div className="grid md:grid-cols-2 gap-16">
 

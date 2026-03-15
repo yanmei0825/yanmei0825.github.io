@@ -2,10 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section
-      id="contact"
-      className="min-h-screen bg-black px-6 py-32 flex items-center"
-    >
+    <section id="contact" className="min-h-screen bg-black px-6 py-32 flex items-center">
       <div className="max-w-6xl mx-auto w-full">
 
         {/* HEADER */}
@@ -16,11 +13,10 @@ export default function Contact() {
           viewport={{ once: true }}
           className="mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-light text-white tracking-tight">
+          <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-500 tracking-tight">
             Контакты
           </h2>
-
-          <div className="mt-6 h-[1px] w-24 bg-blue-500" />
+          <div className="mt-6 h-[2px] w-24 bg-gradient-to-r from-blue-400 to-pink-500" />
         </motion.div>
 
         {/* CONTENT GRID */}
@@ -33,16 +29,16 @@ export default function Contact() {
             transition={{ duration: 0.9 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-xl text-white font-medium mb-6 tracking-wide">
+            <h3 className="text-3xl text-white font-semibold mb-6 tracking-wide">
               Доступность
             </h3>
 
-            <p className="text-gray-400 leading-relaxed max-w-xl">
-              Я ищу возможности для работы в роли <strong>удалённого Full-Stack разработчика</strong>, где могу использовать свои навыки в создании <strong>адаптивных интерфейсов</strong>, <strong>backend API</strong>, оптимизации производительности сайтов и интеграции frontend с backend.
+            <p className="text-gray-300 leading-relaxed max-w-xl">
+              Я Full-Stack разработчик с более чем 5 лет опыта в создании масштабируемых и производительных веб-приложений. Мой подход фокусируется на создании <strong>чистой архитектуры</strong> и эффективной интеграции технологий для решения реальных задач.
             </p>
 
             <p className="mt-6 text-gray-500 text-sm leading-relaxed">
-              Готова работать над проектами с <strong>WordPress</strong>, <strong>1C-Bitrix</strong>, <strong>PHP/MySQL</strong>, а также использовать нейросети (<strong>ChatGPT</strong>, <strong>GitHub Copilot</strong>) для ускорения разработки и генерации кода, макетов и контента.
+              Открыта к проектам в качестве <strong>удалённого Full-Stack разработчика</strong>, с опытом работы с <strong>React, FastAPI, Node.js, PHP</strong>, а также работы с **WordPress** и **1C-Bitrix**.
             </p>
           </motion.div>
 
@@ -53,7 +49,7 @@ export default function Contact() {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-xl text-white font-medium mb-6 tracking-wide">
+            <h3 className="text-3xl text-white font-semibold mb-6 tracking-wide">
               Прямой контакт
             </h3>
 
@@ -63,7 +59,7 @@ export default function Contact() {
                 <p className="text-gray-500 text-sm">Email</p>
                 <a
                   href="mailto:ellenmartinelli0825@outlook.com"
-                  className="text-blue-400 hover:text-blue-300 transition duration-300"
+                  className="text-blue-400 hover:text-blue-300 transition duration-300 text-lg"
                 >
                   ellenmartinelli0825@outlook.com
                 </a>
@@ -71,12 +67,12 @@ export default function Contact() {
 
               <div>
                 <p className="text-gray-500 text-sm">Локация</p>
-                <p>Санкт-Петербург, Россия</p>
+                <p className="text-lg">Санкт-Петербург, Россия</p>
               </div>
 
               <div>
                 <p className="text-gray-500 text-sm">Формат работы</p>
-                <p>Удалённо / Гибридно</p>
+                <p className="text-lg">Удалённо / Гибридно</p>
               </div>
 
             </div>
