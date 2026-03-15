@@ -72,7 +72,7 @@ export default function Contact() {
 
               <div>
                 <p className="text-gray-500 text-sm">Формат работы</p>
-                <p className="text-lg">Удалённо / Гибридно</p>
+                <p className="text-lg">Удалённо</p>
               </div>
 
             </div>
