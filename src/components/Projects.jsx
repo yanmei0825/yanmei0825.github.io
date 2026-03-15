@@ -1,42 +1,30 @@
 import { motion } from "framer-motion";
 
 const projects = [
-  {
+   {
     title: "E-Commerce Platform",
     description:
       "A full-featured e-commerce platform with user authentication, product management, and API integration using React, FastAPI, PostgreSQL, and Docker.",
     tech: ["React", "Node.js", "FastAPI", "PostgreSQL", "Docker"],
-    github: "https://github.com/ellen0825/e-commerce",
+    github: "https://github.com/ellen0825/ecommerce-assignment.git",
     image:
       "https://images.unsplash.com/photo-1557821552-17105176677c"
   },
   {
-    title: "Corporate Portal (WordPress & PHP)",
-    description:
-      "Developed a corporate portal with a custom theme, plugin integration, and contact forms using WordPress and PHP.",
-    tech: ["PHP", "WordPress", "MySQL", "JavaScript"],
-    github:
-      "https://github.com/ellen0825/jongrover-building-a-wordpress-theme-from-scratch",
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+  title: "Corporate Portal (WordPress & PHP)",
+  description:
+    "Corporate portal developed with WordPress using custom theme development, plugin integrations, and contact forms for business websites.",
+  tech: ["PHP", "WordPress", "MySQL", "JavaScript"],
+  github: "https://github.com/ellen0825/wordpress-corporate-portal.git",
+  image:
+    "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
   },
   {
-    title: "API Platform for Data Handling and Processing",
-    description:
-      "A platform for managing data with FastAPI, PostgreSQL, and SQLAlchemy, providing full-stack CRUD functionality and API integration.",
-    tech: ["FastAPI", "PostgreSQL", "SQLAlchemy", "Python"],
-    github: "https://github.com/ellen0825/fastapi-crud",
-    image:
-      "https://images.unsplash.com/photo-1517249137-4b75690b5f2f"
-  },
-  {
-    title: "Real-Time Chat Application with React & FastAPI",
-    description:
-      "A real-time chat application built with React for the frontend, FastAPI for the backend, and WebSockets for communication.",
-    tech: ["React", "FastAPI", "WebSockets", "PostgreSQL"],
-    github: "https://github.com/ellen0825/fastapi-react-chat",
-    image:
-      "https://images.unsplash.com/photo-1604014231537-726d42c587d6"
+      title: "Real-Time Chat Application (Capstone Project)",
+      description: "A real-time chat application built as part of my final year project. It uses React for the frontend, FastAPI for the backend, and WebSockets for real-time communication. Designed and developed from scratch as a personal learning project to enhance my full-stack development skills.",
+      tech: ["React", "FastAPI", "WebSockets", "PostgreSQL"],
+      github: "https://github.com/ellen0825/fastapi-react-chat-app.git",
+      image: "https://images.unsplash.com/photo-1604014231537-726d42c587d6"
   }
 ];
 
