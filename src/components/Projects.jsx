@@ -3,38 +3,44 @@ import { useState } from "react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "E-Commerce Platform - Design Prototype",
     role: "Full-Stack Developer",
     impact: "Improved product loading speed by 40% and built scalable API system",
     description:
-      "A full-featured e-commerce platform with authentication, product management, and payment-ready architecture.",
-    tech: ["React", "FastAPI", "PostgreSQL", "Docker"],
-    github: "https://github.com/ellen0825/ecommerce-assignment.git",
-    demo: "https://your-live-demo-link.com",
-    image: "/images/ecommerce-preview.png",
-  },
-  {
-    title: "Corporate Portal",
-    role: "Frontend Developer",
-    impact: "Delivered responsive UI and improved UX for business clients",
-    description:
-      "Corporate portal built with custom WordPress themes and plugin integrations.",
-    tech: ["PHP", "WordPress", "MySQL", "JavaScript"],
-    github: "https://github.com/ellen0825/wordpress-corporate-portal.git",
-    demo: "https://your-live-demo-link.com",
-    image: "/images/corporate-portal-preview.png",
-  },
-  {
-    title: "Real-Time Chat App",
-    role: "Full-Stack Developer",
-    impact: "Implemented real-time messaging with WebSockets",
-    description:
-      "A real-time chat application using React and FastAPI with WebSocket support.",
-    tech: ["React", "FastAPI", "WebSockets", "PostgreSQL"],
+      "A full-featured e-commerce platform with authentication, product management, and payment-ready architecture. " +
+      "This project also includes a detailed Figma design prototype to visualize the UI/UX flow for the platform.",
+    tech: ["React", "FastAPI", "PostgreSQL", "Docker", "Figma"],
     github: "",
-    demo: "https://www.kindertales.com/",
-    image: "/projects/kindertales.png",
+    demo: "https://www.figma.com/design/ibtakfVVZDqIl9Zhx8f4ZF/Persona-team-library?node-id=0-1&p=f&t=l6c4WBTAI5tOuuPA-0",
+    image: "/projects/design1.png",
   },
+  {
+    title: "Balltime Volleyball AI Platform",
+    role: "Frontend Developer",
+    impact:
+      "Built responsive interfaces for a cutting‑edge AI video analytics platform used by thousands of volleyball players and teams worldwide",
+    description:
+      "Balltime is an AI‑powered video analysis and highlight creation platform tailored to volleyball. " +
+      "The platform uses machine learning to automatically break down game footage, generate statistics, " +
+      "and create highlights, making performance tracking and recruiting easier for players, coaches, and families.",
+    tech: ["React", "AI Integration", "Video Analytics", "Responsive UI"],
+    github: "", 
+    demo: "https://auth.balltime.com/",
+    image: "/projects/volleyball.png",
+  },
+  {
+      title: "Kindertales Childcare Platform",
+      role: "Full-Stack Developer",
+      impact: "Enhanced childcare operations and real-time communication across admin and family users",
+      description:
+        "Kindertales is a cloud-based childcare management software that streamlines daily operations, " +
+        "improves parent-teacher communication, and enables efficient administrative workflows for preschools and daycare centers. " +
+        "Features include attendance tracking, billing automation, activity reporting, and family engagement tools.",
+      tech: ["React", "FastAPI", "CRM", "Cloud Services"],
+      github: "", 
+      demo: "https://www.kindertales.com/",
+      image: "/projects/kindertales.png",
+  }
 ];
 
 export default function Projects() {
@@ -82,7 +88,7 @@ export default function Projects() {
             >
               {/* IMAGE */}
               <div
-                className="w-full  overflow-hidden rounded-t-2xl cursor-pointer"
+                className="w-full   h-52 overflow-hidden rounded-t-2xl cursor-pointer"
                 onClick={() => openModal(project.image)}
               >
                 <img
