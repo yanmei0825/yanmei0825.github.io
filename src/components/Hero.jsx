@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { useState, useEffect } from "react";
-
-// 작은 particle 생성 함수
 const createParticles = (num) => {
   const particles = [];
   for (let i = 0; i < num; i++) {
@@ -28,7 +26,6 @@ export default function Hero() {
     setRotate({ x, y });
   };
 
-  // Particle 애니메이션
   useEffect(() => {
     const interval = setInterval(() => {
       setParticles((prev) =>
