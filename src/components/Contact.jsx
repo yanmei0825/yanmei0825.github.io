@@ -47,16 +47,16 @@ export default function Contact() {
 
         {/* HEADER */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="mb-20"
-        >
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="mb-20"
+            >
           <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-500 tracking-tight">
             Контакты
           </h2>
-          <div className="mt-6 h-[2px] w-24 mx-auto bg-gradient-to-r from-blue-400 to-pink-500" />
+            <div className="mt-6 h-[2px] w-24 bg-gradient-to-r from-blue-400 to-pink-500" />
         </motion.div>
 
         {/* MAIN CONTENT */}
