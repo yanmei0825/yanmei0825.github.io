@@ -40,7 +40,18 @@ const projects = [
       github: "", 
       demo: "https://www.kindertales.com/",
       image: "/projects/kindertales.png",
-  }
+  },
+  {
+  title: "Bilibili-style Video Platform Backend (Case Study)",
+  role: "Backend Developer (PHP / Laravel)",
+  impact: "Improved backend stability and reduced recurring data-processing errors under high load",
+  description:
+    "Participated in backend development and maintenance of a high-load video platform inspired by Bilibili. Worked on REST API integration, business logic debugging, SQL optimization, and production incident resolution.",
+  tech: ["PHP", "Laravel", "MySQL", "REST API", "System Debugging"],
+  github: "",
+  demo: "https://www.bilibili.com/",
+  image: "/projects/bilibili.png",
+}
 ];
 
 export default function Projects() {
