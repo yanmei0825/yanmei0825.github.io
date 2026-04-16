@@ -29,18 +29,16 @@ const projects = [
     image: "/projects/volleyball.png",
   },
   {
-      title: "Kindertales Childcare Platform",
-      role: "Full-Stack Developer",
-      impact: "Enhanced childcare operations and real-time communication across admin and family users",
-      description:
-        "Kindertales is a cloud-based childcare management software that streamlines daily operations, " +
-        "improves parent-teacher communication, and enables efficient administrative workflows for preschools and daycare centers. " +
-        "Features include attendance tracking, billing automation, activity reporting, and family engagement tools.",
-      tech: ["React", "FastAPI", "CRM", "Cloud Services"],
-      github: "", 
-      demo: "https://www.kindertales.com/",
-      image: "/projects/kindertales.png",
-  },
+  title: "Youdao AI Learning Platform",
+  role: "Frontend / Full-Stack Developer",
+  impact: "Improved responsive UI performance and enhanced stability of live learning features under high load",
+  description:
+    "Worked on an AI-driven education platform focusing on responsive UI optimization, live-stream class integration, and interactive learning dashboards. Improved performance across mobile and desktop devices and contributed to system stability during peak traffic.",
+  tech: ["React", "UI Optimization", "REST API", "Performance Tuning", "Responsive Design"],
+  github: "",
+  demo: "https://www.youdao.com/",
+  image: "/projects/youdao.png"
+},
   {
   title: "Bilibili-style Video Platform Backend (Case Study)",
   role: "Backend Developer (PHP / Laravel)",
